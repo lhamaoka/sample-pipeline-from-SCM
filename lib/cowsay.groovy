@@ -5,7 +5,8 @@ def border(text, chr) {
 }
 
 def template(text) {
-"""
+
+println """
 ${border(text, '_')}
 < ${text} >
 ${border(text, '-')}
@@ -15,5 +16,6 @@ ${border(text, '-')}
                ||----w |
                ||     ||
 """
-return this
 }
+
+return this
