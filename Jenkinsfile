@@ -8,7 +8,7 @@ pipeline {
             steps {
                 echo 'Building...Hola y adios con WebHook 2'
                 msg = "¡Hola Mundo!"
-                ootDir = pwd()
+                rootDir = pwd()
                 exampleModule = load "${rootDir}@lib/cowsay.groovy"
                 exampleModule.main(msg)
 
