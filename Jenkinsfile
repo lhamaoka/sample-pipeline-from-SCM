@@ -8,6 +8,10 @@ pipeline {
                 echo 'Building...Hola y adios con WebHook 2'
                 script {
                     scripts=load "lib/cowsay.groovy"
+                    msg = "¡Hola Mundo!"
+                    cs = new cowsay()
+                    cs.main(msg)
+
                 }
                 
 
