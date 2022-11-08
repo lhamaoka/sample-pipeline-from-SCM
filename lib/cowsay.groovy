@@ -16,5 +16,4 @@ ${border(text, '-')}
                ||     ||
 """
 return this
-
 }
