@@ -2,15 +2,21 @@
 pipeline {
     agent any
 
+    parameters{
+
+    }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building...Hola y adios con WebHook 2'
-                msg = "¡Hola Mundo!"
-                rootDir = pwd()
-                exampleModule = load "${rootDir}@lib/cowsay.groovy"
-                exampleModule.main(msg)
+                node {
+                    def msg = "¡Hola Mundo!"
+                    def rootDir = pwd()
+                    def exampleModule = load "${rootDir}@lib/cowsay.groovy"
+                    exampleModule.main(msg)
+                }
+                
 
             }
         }
