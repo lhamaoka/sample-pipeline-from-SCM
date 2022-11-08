@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building...Hola y adios con WebHook'
+                echo 'Building...Hola y adios con WebHook 2'
             }
         }
         stage('Test') {
