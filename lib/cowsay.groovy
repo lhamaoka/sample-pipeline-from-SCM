@@ -23,7 +23,3 @@ if (args.length == 1) {
 } else {
  println "Usage: cowsay [message]"
 }
-
-msg = "¡Hola Mundo!"
-cs = new cowsay()
-cs.main(msg)
