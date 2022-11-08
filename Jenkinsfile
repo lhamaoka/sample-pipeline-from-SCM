@@ -7,8 +7,8 @@ pipeline {
             steps {
                 echo 'Building...Hola y adios con WebHook 2'
                 script {
-                scripts=load "lib/cowsay.groovy"
-            }
+                    scripts=load "lib/cowsay.groovy"
+                }
                 
 
             }
