@@ -15,6 +15,6 @@ ${border(text, '-')}
                ||----w |
                ||     ||
 """
-}
-
 return this
+
+}
