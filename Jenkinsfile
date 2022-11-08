@@ -10,12 +10,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building...Hola y adios con WebHook 2'
-                node {
-                    def msg = "¡Hola Mundo!"
-                    def rootDir = pwd()
-                    def exampleModule = load "${rootDir}@lib/cowsay.groovy"
-                    exampleModule.main(msg)
-                }
+                script {
+                scripts=load "lib/cowsay.groovy"
+            }
                 
 
             }
