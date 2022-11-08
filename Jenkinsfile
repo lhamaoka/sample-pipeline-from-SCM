@@ -1,5 +1,4 @@
 // Jenkinsfile (Declarative Pipeline)
-@lib/cowsay.groovy
 pipeline {
     agent any
 
