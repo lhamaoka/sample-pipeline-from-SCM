@@ -9,8 +9,7 @@ pipeline {
                 script {
                     scripts=load "lib/cowsay.groovy"
                     msg = "¡Hola Mundo!"
-                    cs = new cowsay()
-                    cs.main(msg)
+                    cs = scripts.template(msg)   
 
                 }
                 
