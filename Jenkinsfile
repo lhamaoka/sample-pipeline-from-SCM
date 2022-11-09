@@ -47,6 +47,8 @@ pipeline {
       }
       
       steps {
+        
+          sh 'echo ${SecretValue}'
       }
 
     }
