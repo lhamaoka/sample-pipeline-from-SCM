@@ -1,11 +1,10 @@
 // Jenkinsfile (Declarative Pipeline)
-@Library('shared-lib')
 pipeline {
     agent any
-
     stages {
         stage('Build') {
             steps {
+                @Library('shared-lib')
                 echo 'Building...Hola y adios con WebHook 2'
                 script {
                     def scripts=load "lib/cowsay.groovy"
