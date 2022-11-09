@@ -1,4 +1,5 @@
 // Jenkinsfile (Declarative Pipeline)
+@Library('shared-lib')
 pipeline {
     agent any
 
