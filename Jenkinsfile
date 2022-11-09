@@ -1,4 +1,4 @@
-@Library('shared-lib') _
+@Library('shared-liba') _
 // Jenkinsfile (Declarative Pipeline)
 pipeline {
     agent any
