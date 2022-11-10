@@ -42,9 +42,9 @@ pipeline {
   
   stages {
     stage('Key Vault') {
-      options {
+      //options {
         //azureKeyVault([[envVariable: 'MY_SECRET', name: 'test-secret', secretType: 'Secret']])
-      }
+      //}
       
       steps {
         
