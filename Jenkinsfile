@@ -43,7 +43,7 @@ pipeline {
   stages {
     stage('Key Vault') {
       options {
-        azureKeyVault([[envVariable: 'MY_SECRET', name: 'test-secret', secretType: 'Secret']])
+        //azureKeyVault([[envVariable: 'MY_SECRET', name: 'test-secret', secretType: 'Secret']])
       }
       
       steps {
